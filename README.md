@@ -4,10 +4,10 @@ Writing a two programs to control a 4 wheels rover. To do this, a client program
 
 ## Client Program
 The client is a simple program that collects keyboard inputs and sends them to the server. To accomplish this I used a computer keyboard alongside msvcrt, as it has the most straighforward way of getting a pressed key.
-The program also receives the input back for checking
+The program also receives the input back for checking.
 
 ## Server Program
-The server receives the key input from the client and controls the motor using it. First, it checks to see if the received key is a number between 0-5. If so, the server sets the speed to be equal to (n/5)*255. This is necessary because the speed input is a digital one and not an analog one.
+The server receives the key input from the client and controls the motor using it. First, it checks to see if the received key is a number between 0-5. If so, the server sets the speed to be equal to (n/5)*255. This is necessary because the speed input is a digital one and not an analog one. <br />
 After that, it checks if the input key is either "W", "A", "S" or "D" as these are the motor steering keys. Finally, it prints out the motor settings in the form [direction, speed].
 
 ## Issues

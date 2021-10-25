@@ -7,7 +7,7 @@ speed = 0     					#Initialize speed variable
 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 s.bind((socket.gethostname(), 1435))
 
-s.listen(1)  #listens for one byte only (only one key at a time)
+s.listen(1)  
 client, address = s.accept()
 with client:
 	print(f"Connection from {address} has been established") #check connection
